@@ -80,8 +80,7 @@ void setup() {
   dtostrf(hum, 4, 1, buffer);
   client.publish("esp/bme280/humidity", buffer); 
   delay(2000);  
-  ESP.deepSleep(6e8); 
-  Serial.println("Tou lixado se isto imprimir");
+  ESP.deepSleep(6e8);
 }
 
 void loop() {
